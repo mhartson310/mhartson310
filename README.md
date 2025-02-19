@@ -19,7 +19,7 @@ I'm a cloud security enthusiast and automation specialist with a passion for bui
 ### Zero Trust Cloud Resources
 - **What:** Infrastructure-as-code templates and playbooks that deploy a Zero Trust hub-and-spoke network in Azure, complete with NSG rules, Log Analytics integration, and automated incident response.
 - **Tech:** Terraform, ARM, Azure Sentinel
-- **[View Repo](https://github.com/mhartson319/zero-trust-cloud-resources)**
+- **[View Repo](https://github.com/mhartson310/zero-trust-cloud-resources)**
 
 ---
 
