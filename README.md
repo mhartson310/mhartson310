@@ -43,7 +43,6 @@ I'm a cloud security enthusiast and automation specialist with a passion for bui
 
 - **[Blog](https://mhartson.com/blog)**
 - **[LinkedIn](https://linkedin.com/in/mariohartson)**
-- **[Twitter](https://twitter.com/MarioHartson)**
 - **[GitHub](https://github.com/mhartson310)**
 
 ---
