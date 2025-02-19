@@ -9,7 +9,7 @@ I'm a cloud security enthusiast and automation specialist with a passion for bui
 ### Azure Identity and Access Management (IAM) Best Practices
 - **What:** A guide and automation scripts for setting up secure Azure AD, enforcing MFA & Conditional Access, and managing privileged identities using PIM.
 - **Tech:** Azure AD, PIM, Logic Apps, ARM Templates, PowerShell
-- **[View Repo](https://github.com/mhartson310/azure-iam-best-practices)**
+- **[View Repo](https://github.com/mhartson310/Azure-Identity-and-Access-Management-IAM-Best-Practices)**
 
 ### Azure Security Baseline & Compliance Automation
 - **What:** A repository with a comprehensive security baseline checklist, compliance automation using Azure Policy, and remediation playbooks/ARM templates to enforce standards like GDPR, HIPAA, PCI-DSS, and more.
