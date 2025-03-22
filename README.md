@@ -44,7 +44,7 @@ I'm a cloud security enthusiast and automation specialist with a passion for bui
 - **[Blog](https://mhartson.com/blog)**
 - **[LinkedIn](https://linkedin.com/in/mariohartson)**
 - **[GitHub](https://github.com/mhartson310)**
-
+- **[Products](https://mhartson.com/product/mastering-azure-api-management-security-compliance-and-real-world-solutions/)**
 ---
 
 *Let's build a secure, resilient cloud together!*
