@@ -4,7 +4,11 @@ I design secure cloud and AI architectures—and show how to **implement, valida
 
 **Identity → Platform → Workloads → Data & AI → Detection → Governance**
 
-[LinkedIn](https://www.linkedin.com/in/mhartson310) · [Website](https://mhartson.com) · [Explore my work](#featured-architecture-and-security-engineering)
+[LinkedIn](https://www.linkedin.com/in/mariohartson) · [Website](https://mhartson.com) · [Explore my work](#featured-architecture-and-security-engineering)
+
+## Architecture decision-making
+
+Alongside deployable reference patterns, I publish [architecture decision records, business-value trade-offs, and validation gates](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/tree/main/docs/decision-framework/architecture-decision-framework) so reviewers can follow **why** a design was selected—not only what it contains.
 
 ## Featured architecture and security engineering
 
@@ -61,4 +65,4 @@ Azure security architecture · Zero Trust · Entra ID · Microsoft Sentinel · D
 
 Interested in cloud security architecture, secure AI platforms, detection engineering, governance, or engineering collaboration?
 
-[Connect on LinkedIn](https://www.linkedin.com/in/mhartson310) · [Visit my website](https://mhartson.com)
+[Connect on LinkedIn](https://www.linkedin.com/in/mariohartson) · [Visit my website](https://mhartson.com)
