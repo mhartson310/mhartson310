@@ -1,68 +1,91 @@
+<p align="center">
+  <img src="assets/cloud-security-architect-banner.svg" alt="The Cloud Security Architect — Azure Security, Zero Trust, Enterprise AI and Detection" width="100%" />
+</p>
+
 # Cloud Security Architect | Azure · Zero Trust · AI Security · SIEM/XDR
 
-I design secure cloud and AI architectures—and show how to **implement, validate, monitor, and govern them**.
+I design secure cloud and AI architectures, with an emphasis on **how controls are selected, implemented, tested, and operated**.
 
 **Identity → Platform → Workloads → Data & AI → Detection → Governance**
 
-[LinkedIn](https://www.linkedin.com/in/mariohartson) · [Website](https://mhartson.com) · [Explore my work](#featured-architecture-and-security-engineering)
-
-## Architecture decision-making
-
-Alongside deployable reference patterns, I publish [architecture decision records, business-value trade-offs, and validation gates](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/tree/main/docs/decision-framework/architecture-decision-framework) so reviewers can follow **why** a design was selected—not only what it contains.
+[LinkedIn](https://www.linkedin.com/in/mariohartson) · [Website](https://mhartson.com) · [Flagship work](#featured-architecture-and-security-engineering) · [Implementation companion](#hands-on-implementation-and-other-engineering)
 
 ## Featured architecture and security engineering
 
-### 1. [Azure Zero Trust Reference Architectures](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures)
+<table>
+<tr>
+<td width="33%" valign="top">
 
-**Design → Terraform → Negative-security testing → Detection → SOAR → Controlled remediation**
+### 01 · [Azure Zero Trust Architectures](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures)
 
-Architecture reference patterns covering identity, workload permissions, private connectivity, monitoring, and security operations. Includes deployable implementation examples, KQL detections, validation scripts, playbooks, and an end-to-end Azure lab runbook.
+**Secure enterprise cloud platforms**
 
-**Start here:** [Architecture](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/tree/main/architecture/enterprise-application) · [Terraform](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/tree/main/terraform/enterprise-application) · [Validation runbook](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/blob/main/docs/validation/zero-trust-end-to-end-runbook.md)
+Identity · Privileged access · Private connectivity · Terraform · Monitoring
 
-### 2. [Secure Enterprise RAG on Azure](https://github.com/mhartson310/Azure-Secure-Enterprise-RAG)
+[Architecture patterns](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/tree/main/architecture/enterprise-application) · [Terraform](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/tree/main/terraform/enterprise-application) · [Validation plan](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/blob/main/docs/validation/zero-trust-end-to-end-runbook.md)
 
-**Identity-aware retrieval → Authorization boundaries → Threat modeling → Observability**
+</td>
+<td width="33%" valign="top">
 
-A practical design for enterprise RAG with authorization before document content reaches the model. Covers Azure AI Search, application-level authorization, Entra ID, Managed Identity, Private Link, threat modeling, defensive controls, and Sentinel monitoring patterns.
+### 02 · [Azure AI Security Architectures](https://github.com/mhartson310/Azure-AI-Security-Reference-Architectures)
 
-**Start here:** [Architecture](https://github.com/mhartson310/Azure-Secure-Enterprise-RAG/tree/main/architecture) · [Threat model](https://github.com/mhartson310/Azure-Secure-Enterprise-RAG/blob/main/docs/threat-model.md) · [Security controls](https://github.com/mhartson310/Azure-Secure-Enterprise-RAG/blob/main/docs/security-controls.md)
+**Secure emerging AI workloads**
 
-### 3. [Sentinel KQL Library](https://github.com/mhartson310/Sentinel-KQL-Library)
+Enterprise RAG · Agentic AI · Governed MLOps · AI FinOps
 
-**Detection logic → Tuning → Analytics-as-code → Automated triage → Approval-gated response**
+[Explore architecture gallery](https://github.com/mhartson310/Azure-AI-Security-Reference-Architectures#architecture-library) · [Secure RAG V2](https://github.com/mhartson310/Azure-AI-Security-Reference-Architectures/tree/main/01-secure-enterprise-rag) · [Threat models](https://github.com/mhartson310/Azure-AI-Security-Reference-Architectures/tree/main/02-secure-agentic-ai/threat-model)
 
-Microsoft Sentinel and Defender detection examples with prerequisites, false-positive considerations, and response guidance. Includes architecture-linked Zero Trust KQL, Bicep analytics rules, automation rules, Logic Apps playbooks, and conditional-remediation decision models.
+</td>
+<td width="33%" valign="top">
 
-**Start here:** [Zero Trust detections](https://github.com/mhartson310/Sentinel-KQL-Library/tree/main/kql-queries/zero-trust/enterprise-application) · [Analytics Bicep](https://github.com/mhartson310/Sentinel-KQL-Library/tree/main/deploy/bicep/zero-trust-analytics) · [Response playbooks](https://github.com/mhartson310/Sentinel-KQL-Library/tree/main/deploy/playbooks/zero-trust)
+### 03 · [Sentinel KQL Library](https://github.com/mhartson310/Sentinel-KQL-Library)
 
-## Platform, governance, and cost engineering
+**Operational detection and response**
 
-| Project | Engineering focus |
+KQL analytics · Defender XDR · Bicep · SOAR · Response gates
+
+[Detection library](https://github.com/mhartson310/Sentinel-KQL-Library/tree/main/kql-queries) · [Analytics-as-code](https://github.com/mhartson310/Sentinel-KQL-Library/tree/main/deploy/bicep/zero-trust-analytics) · [Response playbooks](https://github.com/mhartson310/Sentinel-KQL-Library/tree/main/deploy/playbooks/zero-trust)
+
+</td>
+</tr>
+</table>
+
+### How I approach architecture decisions
+
+**Business problem → Architecture and trust boundaries → Threats → Control ownership → Implementation → Negative tests → Telemetry and evidence**
+
+The [Zero Trust architecture decision framework](https://github.com/mhartson310/Azure-Zero-Trust-Reference-Architectures/tree/main/docs/decision-framework/architecture-decision-framework) documents tradeoffs, rejected approaches, risk, cost and validation gates. Each architecture separates *design intent* from *observed proof*.
+
+## Hands-on implementation and other engineering
+
+| Repository | Role in the portfolio | Where to start |
+|---|---|---|
+| [Secure Enterprise RAG — implementation companion](https://github.com/mhartson310/Azure-Secure-Enterprise-RAG) | **Code and deployment path:** FastAPI, Bicep, ACL-aware retrieval, Sentinel/KQL and security tests. The [AI architecture library](https://github.com/mhartson310/Azure-AI-Security-Reference-Architectures/tree/main/01-secure-enterprise-rag) owns the broader design blueprint. | [App](https://github.com/mhartson310/Azure-Secure-Enterprise-RAG/tree/main/app) · [Deployment](https://github.com/mhartson310/Azure-Secure-Enterprise-RAG/tree/main/deploy) · [Tests & CI](https://github.com/mhartson310/Azure-Secure-Enterprise-RAG/actions) |
+| [FedRAMP Azure Toolkit](https://github.com/mhartson310/FedRAMP-Azure-Toolkit) | Selected compliance-as-code patterns for account lifecycle and audit evidence; not an authorization package. | [Control automation](https://github.com/mhartson310/FedRAMP-Azure-Toolkit/tree/main/control-automation) |
+| [Azure Landing Zones](https://github.com/mhartson310/Azure-Landing-Zones) | Terraform-based hub/spoke networking and landing-zone design. | [Terraform modules](https://github.com/mhartson310/Azure-Landing-Zones/tree/main/terraform) |
+| [Azure Cost Optimization Toolkit](https://github.com/mhartson310/Azure-Cost-Optimization-Toolkit) | FinOps investigation scripts and reviewable optimization decisions. | [Tooling](https://github.com/mhartson310/Azure-Cost-Optimization-Toolkit/tree/main/scripts) |
+
+### Evidence maturity — what the projects do and do not prove
+
+| Evidence type | Current meaning |
 |---|---|
-| [Azure Landing Zones](https://github.com/mhartson310/Azure-Landing-Zones) | Terraform hub/spoke modules, networking architecture, infrastructure review |
-| [FedRAMP Azure Toolkit](https://github.com/mhartson310/FedRAMP-Azure-Toolkit) | Selected AC-2 and AU-2 control automation, account lifecycle, audit evidence |
-| [Azure Cost Optimization Toolkit](https://github.com/mhartson310/Azure-Cost-Optimization-Toolkit) | FinOps, waste detection, resource analysis, reviewable optimization decisions |
+| **Architecture, diagrams, ADRs, and threat models** | Documented decisions and hypotheses, *not* deployed control effectiveness |
+| **Infrastructure and application code** | Inspectable implementation patterns, *not* automatically a successful Azure deployment |
+| **Automated CI checks** | Actual pass/fail is visible in each repo's [Actions](https://github.com/mhartson310?tab=repositories); a workflow file or badge is not itself evidence |
+| **Azure lab / production validation** | Only claimed when reproducible results and sanitized evidence are published |
 
-## My architecture approach
+**Current focus:** Repair failing CI where necessary, run the AI architecture tests in CI, and produce one reproducible Azure negative-security lab with redacted authorization evidence.
 
-**Problem → Architecture → Trust boundaries → Threats → Controls → Deployment → Validation → Monitoring**
+## Focus areas
 
-I focus on practical questions:
-
-- **What are we protecting?** Assets, identities, data, workloads, and business outcomes.
-- **Where can it fail?** Trust boundaries, privilege paths, telemetry gaps, and unsafe assumptions.
-- **How do we control risk?** Least privilege, workload identity, isolation, policy, monitoring, and response.
-- **How do we prove it works?** Tests, reproducible deployment paths, detection logic, and documented evidence.
-
-My portfolio emphasizes **inspectable engineering artifacts** over product claims. Reference implementations and CI checks are not represented as successful production deployments or live validation unless that evidence is available.
-
-## Areas of focus
-
-Azure security architecture · Zero Trust · Entra ID · Microsoft Sentinel · Defender XDR · KQL · Terraform · Private Link · Managed Identity · Cloud governance · FedRAMP patterns · Secure RAG · AI threat modeling · FinOps
+**Architecture:** Azure security, Zero Trust, Entra ID, Managed Identity, Private Link, landing zones, governance, FedRAMP patterns.  
+**Secure AI:** Enterprise RAG, Microsoft Foundry, Copilot Studio, Azure Machine Learning, Purview, threat modeling, MITRE ATLAS.  
+**Operations:** Microsoft Sentinel, Defender XDR, KQL, detection-as-code, incident response, SOAR, FinOps.
 
 ## Connect
 
-Interested in cloud security architecture, secure AI platforms, detection engineering, governance, or engineering collaboration?
+Interested in secure cloud and AI architecture, platform modernization, detection engineering, or design collaboration?
 
 [Connect on LinkedIn](https://www.linkedin.com/in/mariohartson) · [Visit my website](https://mhartson.com)
+
+<sub>Independent professional portfolio. Reference content is not official Microsoft guidance; validation state is documented per project.</sub>
